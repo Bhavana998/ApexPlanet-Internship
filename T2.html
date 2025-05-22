@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Webpage</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <ul>
+        <li><a href="#form-section">Form</a></li>
+        <li><a href="#todo-section">To-Do List</a></li>
+        <li><a href="#gallery-section">Image Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- Form Section -->
+    <section id="form-section" class="content">
+      <h2>Form Section</h2>
+      <form>
+        <input type="text" placeholder="Enter your name" required>
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <!-- To-Do List Section -->
+    <section id="todo-section" class="content">
+      <h2>To-Do List</h2>
+      <input id="task-input" type="text" placeholder="Enter a new task">
+      <button id="add-task">Add Task</button>
+      <ul id="task-list"></ul>
+    </section>
+
+    <!-- Image Gallery Section -->
+    <section id="gallery-section" class="content">
+      <h2>Image Gallery</h2>
+      <input id="image-url" type="text" placeholder="Enter image URL">
+      <button id="add-image">Add Image</button>
+      <div id="gallery"></div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Interactive Webpage</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
