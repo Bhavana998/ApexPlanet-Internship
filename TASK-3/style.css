@@ -1,0 +1,66 @@
+/* Apply a vibrant animated gradient background */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(120deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+    color: #fff;
+    background-size: 400% 400%;
+    animation: gradientShift 12s ease infinite;
+  }
+  
+  /* Background gradient animation */
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  /* Quiz container styles */
+  .quiz-container {
+    background: rgba(20, 20, 40, 0.9);
+    padding: 30px 20px; /* Reduced padding */
+    border-radius: 15px; /* Slightly reduced border radius */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    max-width: 400px; /* Reduced max-width for smaller container */
+    width: 85%; /* Slightly reduced width for responsiveness */
+    text-align: center;
+    backdrop-filter: blur(6px);
+  }
+  
+  .quiz-header {
+    font-size: 26px; /* Adjusted font size for smaller container */
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #f9ed69;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Question text styles */
+  .question {
+    font-size: 20px; /* Reduced font size for smaller container */
+    margin-bottom: 20px;
+    color: #c9f9ff;
+  }
+  
+  /* Answer button container */
+  .answers {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Answer button styles */
+  .answer {
+    background: linear-gradient(90deg, #ff758c, #ff7eb3, #ff9a9e);
+    padding: 14px; /* Adjusted padding */
+    margin: 8px 0; /* Adjusted spacing between buttons */
+    border-radius: 10px; /* Slightly smaller border radius */
+    border: none;
+    color: white;
+    cursor: pointer;
+   
+  
