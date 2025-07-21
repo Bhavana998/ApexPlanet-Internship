@@ -5,6 +5,7 @@ Internship Duration: 45 Days
 This project was completed as part of the Web Development Internship at Apexplanet Internship. Throughout this internship, I worked on various tasks focusing on improving my HTML, CSS, and JavaScript skills to build interactive, responsive, and functional websites.
 
 📌 Internship Tasks Completed:
+
 ✅ Task 1: Basic Web Page (HTML Basics)
 Created a simple web page with:
 Headings
