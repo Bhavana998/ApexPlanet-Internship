@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Location Tracker - Real-time GPS Tracking</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>📍 Location Tracker</h1>
+      <p class="subtitle">Real-time GPS location tracking</p>
+    </header>
+
+    <div class="main-content">
+      <!-- Map Container -->
+      <div class="map-section">
+        <div id="map"></div>
+        <div class="map-overlay" id="mapOverlay">
+          <div class="overlay-content">
+            <div class="spinner"></div>
+            <p>Click "Start Tracking" to view your location</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Location Info Card -->
+      <div class="info-card">
+        <div class="card-header">
+          <h2>Current Location</h2>
+          <span class="status-badge" id="statusBadge">Inactive</span>
+        </div>
+        
+        <div class="location-details">
+          <div class="detail-item">
+            <span class="label">Latitude:</span>
+            <span class="value" id="latitude">--</span>
+          </div>
+          <div class="detail-item">
+            <span class="label">Longitude:</span>
+            <span class="value" id="longitude">--</span>
+          </div>
+          <div class="detail-item">
+            <span class="label">Accuracy:</span>
+            <span class="value" id="accuracy">--</span>
+          </div>
+          <div class="detail-item full-width">
+            <span class="label">Address:</span>
+            <span class="value" id="address">--</span>
+          </div>
+          <div class="detail-item full-width">
+            <span class="label">Last Updated:</span>
+            <span class="value" id="timestamp">--</span>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button id="startBtn" class="btn btn-primary">
+            <span class="btn-icon">▶</span>
+            Start Tracking
+          </button>
+          <button id="stopBtn" class="btn btn-secondary" disabled>
+            <span class="btn-icon">⏸</span>
+            Stop Tracking
+          </button>
+        </div>
+      </div>
+
+      <!-- Location History -->
+      <div class="history-card">
+        <div class="card-header">
+          <h2>Location History</h2>
+          <button id="clearHistoryBtn" class="btn-clear">Clear</button>
+        </div>
+        <div class="history-list" id="historyList">
+          <p class="empty-state">No location history yet. Start tracking to see your location history.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Error Message -->
+    <div class="error-message" id="errorMessage"></div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
